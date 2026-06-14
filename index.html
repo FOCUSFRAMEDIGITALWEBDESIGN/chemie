@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power-to-Gas: Aus Strom wird Gas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Vollbild Button -->
+    <button id="fullscreen-btn" class="fullscreen-btn" title="Vollbildmodus starten">⛶</button>
+
+    <!-- Hintergrund Animation -->
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation an der Seite -->
+    <nav class="progress-nav">
+        <ul>
+            <li><a href="#slide-1" class="dot active"></a></li>
+            <li><a href="#slide-2" class="dot"></a></li>
+            <li><a href="#slide-3" class="dot"></a></li>
+            <li><a href="#slide-4" class="dot"></a></li>
+            <li><a href="#slide-5" class="dot"></a></li>
+            <li><a href="#slide-6" class="dot"></a></li>
+            <li><a href="#slide-7" class="dot"></a></li>
+            <li><a href="#slide-8" class="dot"></a></li>
+            <li><a href="#slide-9" class="dot"></a></li>
+            <li><a href="#slide-10" class="dot"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptinhalt (Scroll-Container) -->
+    <main class="container">
+        <!-- Folie 1 -->
+        <section id="slide-1" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <div class="badge">Chemie, Klasse 10</div>
+                <h1 class="gradient-text">Power-to-Gas</h1>
+                <h2>Aus Strom wird Gas</h2>
+                <p class="subtitle">Wie wir grüne Energie speichern können.</p>
+                <div class="author">Von: Maxi</div>
+                <a href="#slide-2" class="scroll-btn">Los geht's ↓</a>
+            </div>
+        </section>
+
+        <!-- Folie 2 -->
+        <section id="slide-2" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <h2>Was ist "Power-to-Gas" eigentlich?</h2>
+                <ul class="feature-list">
+                    <li style="--delay: 0.1s">
+                        <div class="icon">⚡</div>
+                        <div>
+                            <strong>Kurz gesagt:</strong> Man macht aus elektrischem Strom ("Power") brennbares Gas.
+                        </div>
+                    </li>
+                    <li style="--delay: 0.3s">
+                        <div class="icon">🔋</div>
+                        <div>
+                            <strong>Warum der Aufwand?</strong> Wir können Strom super schlecht für lange Zeit speichern (Akkus sind zu teuer).
+                        </div>
+                    </li>
+                    <li style="--delay: 0.5s">
+                        <div class="icon">🛢️</div>
+                        <div>
+                            <strong>Der Vorteil:</strong> Gas hingegen kann man extrem gut und sehr lange in großen Tanks speichern – wie normales Erdgas.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Folie 3 -->
+        <section id="slide-3" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <h2>Das Problem mit Wind und Sonne</h2>
+                <p class="subtitle">Erneuerbare Energien sind vom Wetter abhängig.</p>
+                
+                <div class="grid-2">
+                    <div class="info-box danger" style="--delay: 0.2s">
+                        <h3>Zu viel Strom 🌪️</h3>
+                        <p>Wenn es stark stürmt, haben wir oft mehr Strom als wir brauchen. Die Windräder müssen dann leider oft abgestellt werden.</p>
+                    </div>
+                    <div class="info-box warning" style="--delay: 0.4s">
+                        <h3>Zu wenig Strom 🌙</h3>
+                        <p>Wenn es nachts windstill ist (die sogenannte "Dunkelflaute"), haben wir ein Problem, weil Strom im Netz fehlt.</p>
+                    </div>
+                </div>
+                
+                <div class="highlight-box success animate-on-scroll" style="--delay: 0.6s">
+                    <strong>💡 Die Idee:</strong> Den überschüssigen Strom einfach als Gas "einfrieren" und später verbrauchen, wenn man ihn braucht!
+                </div>
+            </div>
+        </section>
+
+        <!-- Folie 4 -->
+        <section id="slide-4" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <div class="badge">Schritt 1</div>
+                <h2>Die Elektrolyse</h2>
+                <p>Das ist der wichtigste Schritt, für den wir unseren überschüssigen Strom nutzen.</p>
+                
+                <div class="reaction-container animate-on-scroll" style="--delay: 0.3s">
+                    <div class="reaction-step">
+                        <span class="molecule">2 H₂O</span>
+                        <span class="desc">Wasser</span>
+                    </div>
+                    <div class="reaction-arrow">
+                        <span class="lightning">⚡</span>
+                        <span>Strom</span>
+                    </div>
+                    <div class="reaction-step">
+                        <span class="molecule highlight-text">2 H₂ + O₂</span>
+                        <span class="desc">Wasserstoff + Sauerstoff</span>
+                    </div>
+                </div>
+
+                <ul class="clean-list">
+                    <li style="--delay: 0.5s">Wir nehmen normales Wasser (H₂O) und jagen den Strom durch.</li>
+                    <li style="--delay: 0.6s">Dadurch spaltet sich das Wasser in seine Bestandteile auf.</li>
+                    <li style="--delay: 0.7s"><strong class="highlight-text">Der Wasserstoff ist jetzt unser erster Energiespeicher!</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Folie 5 (NEU: Detail Elektrolyseur) -->
+        <section id="slide-5" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <div class="badge">Detailwissen</div>
+                <h2>Wie genau wird Strom jetzt zu Gas?</h2>
+                <p class="subtitle">Ein Blick in das Innere der Maschine (Elektrolyseur).</p>
+                
+                <div class="grid-2">
+                    <div class="info-box" style="--delay: 0.2s; border-color: #3b82f6;">
+                        <h3 style="color: #3b82f6;">Minuspol (Kathode) 🔵</h3>
+                        <p>Die elektrischen Teilchen aus dem Stromnetz (Elektronen) wandern hierhin. Das Wasser wird gespalten und es steigen <strong>Wasserstoff-Gasbläschen (H₂)</strong> auf.</p>
+                    </div>
+                    <div class="info-box" style="--delay: 0.4s; border-color: #ef4444;">
+                        <h3 style="color: #ef4444;">Pluspol (Anode) 🔴</h3>
+                        <p>Hier passiert der Rest: Die übrig gebliebenen Teilchen reagieren hier und es steigen <strong>Sauerstoff-Gasbläschen (O₂)</strong> nach oben.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box warning animate-on-scroll" style="--delay: 0.6s">
+                    <strong>Wichtig:</strong> Zwischen den beiden Polen ist eine hauchdünne Folie (Membran). Sie sorgt dafür, dass sich der frische Wasserstoff und Sauerstoff nicht sofort wieder vermischen – sonst hätten wir explosives Knallgas!
+                </div>
+            </div>
+        </section>
+
+        <!-- Folie 6 -->
+        <section id="slide-6" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <div class="badge">Schritt 2</div>
+                <h2>Die Methanisierung</h2>
+                
+                <div class="problem-solution">
+                    <div class="box error animate-on-scroll" style="--delay: 0.1s">
+                        <strong>Das Problem:</strong> Wasserstoff ist cool, aber man kann ihn nicht einfach in riesigen Mengen in die normalen Gasleitungen pumpen. Die Rohre machen das nicht mit.
+                    </div>
+                    <div class="box success animate-on-scroll" style="--delay: 0.3s">
+                        <strong>Die Lösung:</strong> Wir lassen den Wasserstoff mit Kohlenstoffdioxid (CO₂) reagieren. Heraus kommt <strong>Methan (CH₄)</strong>. Das ist quasi normales Erdgas!
+                    </div>
+                </div>
+
+                <div class="equation-box animate-on-scroll" style="--delay: 0.5s">
+                    <div class="label">Reaktionsgleichung (Sabatier-Prozess)</div>
+                    <div class="equation">CO₂ + 4 H₂ → <span class="highlight-text">CH₄</span> + 2 H₂O</div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- Folie 7 -->
+        <section id="slide-7" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <h2>Was machen wir dann mit dem Gas?</h2>
+                <p class="subtitle">Das Methan wird ins riesige Erdgasnetz gepumpt. Wofür nutzt man das dann?</p>
+                
+                <div class="grid-4">
+                    <div class="use-case" style="--delay: 0.2s">
+                        <div class="icon">🔌</div>
+                        <h3>Wieder zu Strom</h3>
+                        <p>Verbrennen in Kraftwerken (wenn kein Wind weht).</p>
+                    </div>
+                    <div class="use-case" style="--delay: 0.3s">
+                        <div class="icon">🔥</div>
+                        <h3>Heizung</h3>
+                        <p>Zum ganz normalen Heizen bei uns zu Hause.</p>
+                    </div>
+                    <div class="use-case" style="--delay: 0.4s">
+                        <div class="icon">🚗</div>
+                        <h3>Verkehr</h3>
+                        <p>Als Treibstoff für Busse, Schiffe oder auch Autos.</p>
+                    </div>
+                    <div class="use-case" style="--delay: 0.5s">
+                        <div class="icon">🏭</div>
+                        <h3>Industrie</h3>
+                        <p>Die Chemieindustrie braucht sowieso extrem viel Gas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Folie 8 -->
+        <section id="slide-8" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <h2>Lohnt sich das? (Vor- und Nachteile)</h2>
+                
+                <div class="pros-cons">
+                    <div class="pros animate-on-scroll" style="--delay: 0.2s">
+                        <h3 class="success-text">Vorteile</h3>
+                        <ul>
+                            <li>Wir können riesige Mengen Energie monatelang speichern (z. B. vom Sommer für den kalten Winter).</li>
+                            <li>Es ist klimafreundlich, weil wir grünen Strom verwenden.</li>
+                        </ul>
+                    </div>
+                    <div class="cons animate-on-scroll" style="--delay: 0.4s">
+                        <h3 class="danger-text">Nachteile</h3>
+                        <ul>
+                            <li><strong>Geringer Wirkungsgrad:</strong> Es geht mega viel Energie als Wärme verloren! Von 100% Strom bleiben am Ende oft nur 30 bis 40% übrig.</li>
+                            <li>Die Anlagen sind im Moment noch ziemlich teuer im Aufbau.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Folie 9 -->
+        <section id="slide-9" class="slide">
+            <div class="glass-card animate-on-scroll text-center">
+                <h2>Mein Fazit</h2>
+                <ul class="conclusion-list">
+                    <li style="--delay: 0.2s">Power-to-Gas rettet uns nicht davor, dass wir Strom sparen müssen, weil die Energieverluste recht hoch sind.</li>
+                    <li style="--delay: 0.4s"><strong>Aber:</strong> Es ist extrem wichtig für die Energiewende, um Überschuss in den Winter zu retten!</li>
+                    <li style="--delay: 0.6s">In Zukunft werden wir sicher viel mehr davon sehen, wenn die Technik billiger wird.</li>
+                </ul>
+                <h3 class="end-text animate-on-scroll" style="--delay: 1.0s">Habt ihr noch Fragen?<br><span class="highlight-text">Danke fürs Zuhören!</span></h3>
+            </div>
+        </section>
+
+        <!-- Folie 10 (Quellen) -->
+        <section id="slide-10" class="slide">
+            <div class="glass-card animate-on-scroll">
+                <h2>Quellenverzeichnis</h2>
+                
+                <ul class="feature-list" style="margin-top: 2rem;">
+                    <li style="--delay: 0.2s">
+                        <div class="icon">🔗</div>
+                        <div>
+                            <strong>Umweltbundesamt:</strong> Allgemeine Informationen zur Speicherung von erneuerbaren Energien.<br>
+                            <a href="https://www.umweltbundesamt.de/" target="_blank" style="color: var(--primary); text-decoration: none; word-break: break-all;">www.umweltbundesamt.de</a>
+                        </div>
+                    </li>
+                    <li style="--delay: 0.4s">
+                        <div class="icon">🔗</div>
+                        <div>
+                            <strong>Bundesministerium für Wirtschaft und Klimaschutz:</strong> Fakten zur Wasserstoffstrategie.<br>
+                            <a href="https://www.bmwk.de/" target="_blank" style="color: var(--primary); text-decoration: none; word-break: break-all;">www.bmwk.de</a>
+                        </div>
+                    </li>
+                    <li style="--delay: 0.6s">
+                        <div class="icon">🔗</div>
+                        <div>
+                            <strong>Wikipedia / Chemie.de:</strong> Für die Details und chemischen Reaktionsgleichungen (Sabatier-Prozess).<br>
+                            <a href="https://de.wikipedia.org/wiki/Power-to-Gas" target="_blank" style="color: var(--primary); text-decoration: none; word-break: break-all;">de.wikipedia.org/wiki/Power-to-Gas</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
